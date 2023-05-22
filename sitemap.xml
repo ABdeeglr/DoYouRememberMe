@@ -2,7 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://150.158.28.29/about/index.html</loc>
+    <loc>http://150.158.28.29/index/index.html</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://150.158.28.29/2023/05/22/muse-repo/</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://150.158.28.29/2023/05/21/SytleTest-Classical/</loc>
+    
+    <lastmod>2023-05-22</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://150.158.28.29/2023/05/21/StyleTest-Modern/</loc>
     
     <lastmod>2023-05-22</lastmod>
     
@@ -13,34 +40,16 @@
   <url>
     <loc>http://150.158.28.29/2023/05/21/StyleTest-Default/</loc>
     
-    <lastmod>2023-05-21</lastmod>
+    <lastmod>2023-05-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://150.158.28.29/2023/05/21/StyleTest-Modern/</loc>
+    <loc>http://150.158.28.29/about/index.html</loc>
     
-    <lastmod>2023-05-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://150.158.28.29/2023/05/21/SytleTest-Classical/</loc>
-    
-    <lastmod>2023-05-21</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://150.158.28.29/index/index.html</loc>
-    
-    <lastmod>2023-05-21</lastmod>
+    <lastmod>2023-05-22</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -153,6 +162,13 @@
     <priority>1.0</priority>
   </url>
 
+  
+  <url>
+    <loc>http://150.158.28.29/tags/tests/</loc>
+    <lastmod>2023-05-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 
   
