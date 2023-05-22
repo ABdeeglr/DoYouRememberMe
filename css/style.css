@@ -103,6 +103,8 @@ a
 
 .index-logo
 {
+    font-family: 'Times New Roman', Times, serif;
+    align-content: center;
     font-size: 3rem;
     font-weight: 600;
     margin-bottom: 0px;
