@@ -1,4 +1,5 @@
 http://150.158.28.29/index/index.html
+http://150.158.28.29/2023/05/23/One-Hundred-Years-of-Solitude/
 http://150.158.28.29/2023/05/22/muse-repo/
 http://150.158.28.29/2023/05/21/SytleTest-Classical/
 http://150.158.28.29/2023/05/21/StyleTest-Modern/
