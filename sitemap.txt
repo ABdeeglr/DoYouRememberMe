@@ -1,6 +1,7 @@
+http://150.158.28.29/index/index.html
+http://150.158.28.29/2023/05/26/Aether/
 http://150.158.28.29/2023/05/23/One-Hundred-Years-of-Solitude/
 http://150.158.28.29/2023/05/23/MidJourney-Prompt/
-http://150.158.28.29/index/index.html
 http://150.158.28.29/2023/05/22/muse-repo/
 http://150.158.28.29/2023/05/21/SytleTest-Classical/
 http://150.158.28.29/2023/05/21/StyleTest-Modern/
@@ -18,4 +19,5 @@ http://150.158.28.29/2023/05/15/%E6%94%B9%E5%8F%98/
 http://150.158.28.29/2023/05/15/%E4%BF%9D%E6%8C%81%E4%B8%8A%E9%A3%8E%E4%BD%8D/
 http://150.158.28.29/list/index.html
 http://150.158.28.29/
+http://150.158.28.29/tags/science-fiction/
 http://150.158.28.29/tags/tests/
