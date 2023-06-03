@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
+    <meta name="description" content="ubuntu系统配置" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
+    <title>The Matrix | Matrix is seeing you</title>
+
+    
+        
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/reset.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/markdown.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/fonts.css">
+ 
+            <!--注意：首页既不是post也不是page-->
+            
+        
+    
+    
+<link rel="stylesheet" href="/css/ui.css">
+ 
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+    
+    <style>
+        :root {
+            --waline-theme-color: #fec591; 
+            --waline-color: #fec591; 
+            --waline-border-color: #fec591; 
+            --waline-white: #fec591; 
+            --waline-bgcolor-light: #005454;  
+        }
+        body {
+            color: #fec591;
+            background: #005454;
+        }
+        .post-md code {
+            background: black;
+            color: white; 
+        }
+        .wl-card span.wl-nick {
+            color: #fec591; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #fec591;
+            color: #fec591; 
+        }
+        .wl-btn {
+            border: 1px solid #fec591; 
+            color:  #fec591;  
+        }
+        .wl-btn.primary {
+            color: #005454; 
+        }
+        .wl-header label {
+            color: #fec591;
+        }
+        a {
+            color: #fec591;
+        }
+
+        .post-md a {
+            color: #fec591;
+        }
+
+        .nav li a {
+            color: #fec591;
+        }
+
+        .archive-main a:link {
+            color: #fec591;
+        }
+
+        .archive li span {
+            color: #fec591;
+        }
+
+        .post-main-title {
+            color: #fec591;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #fec591;
+        }
+
+        [data-waline] p {
+            color: #fec591;
+        }
+        [data-waline] a {
+            color: #fec591;
+        } 
+        .wl-sort li.active {
+            color: #fec591;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #005454;
+        }
+
+        .paper {
+            background: #005454;
+        }
+
+        .index-main {
+            background: #005454;
+        }
+
+        .paper-main {
+            background: #005454;
+        }
+
+        .wl-panel {
+            background: #005454;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #005454;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #005454;
+        }
+
+        .post-md>table tr:nth-child(odd) td {
+            background: #005454;
+        }
+
+        .post-md>table tr:nth-child(even) td {
+            background: #005454;
+        }
+    </style>
+
+    <body>
+        <div class="paper">
+            
+            
+            
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+<div class="header">
+    <div class="header-container">
+        <img style="
+        width: 56px;
+        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
+        <div class="header-content">
+            <a class="logo" href="/">The Matrix</a> 
+            <span class="description">There comes a time when you realize that everything is a dream and only those things can be preserved by writting have any possibility to be real.</span> 
+        </div>
+        
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/about/">关于</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
+
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+
+    
+        <div class="post-main-title">
+            ubuntu系统配置
+        </div>
+      
+    
+
+    <div class="post-md">
+        
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9F%BA%E6%9C%AC"><span class="post-toc-text">基本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E9%98%B6"><span class="post-toc-text">进阶</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-%E7%AA%97%E5%8F%A3%E8%A1%8C%E4%B8%BA%E8%B0%83%E6%95%B4"><span class="post-toc-text">01 窗口行为调整</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-%E8%BE%93%E5%85%A5%E6%B3%95%E9%85%8D%E7%BD%AE-%E5%8F%82%E8%80%83%E4%B8%AD%E5%B7%9E%E9%9F%B5%E8%BE%93%E5%85%A5%E6%B3%95%E8%AE%BE%E7%BD%AE"><span class="post-toc-text">02 输入法配置 | 参考中州韵输入法设置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#03-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91"><span class="post-toc-text">03 科学上网</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96"><span class="post-toc-text">其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-pip-%E6%8D%A2%E6%BA%90"><span class="post-toc-text">01 pip 换源</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-docker-%E5%AE%89%E8%A3%85"><span class="post-toc-text">02 docker 安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Set-up-the-repository"><span class="post-toc-text">Set up the repository</span></a></li></ol></li></ol>
+        
+        <h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><ol>
+<li>安装 ubuntu 22.04 版本系统</li>
+<li>配置 .ssh 文件（复制备份）可用于远程登录</li>
+<li>安装基本程序和编译器，包括<ol>
+<li>git</li>
+<li>gcc</li>
+<li>make</li>
+<li>zsh</li>
+<li>vim</li>
+<li>curl</li>
+<li>wget</li>
+</ol>
+</li>
+<li>终端外观调整，并添加 omz，细节请参考附录中的 ubuntu 命令行美化</li>
+<li>安装 OpenJDK</li>
+<li>安装 Edge, vscode. 安装 vscode 插件，包含项目管理，背景自定义，rosely light 主题，图标，gitlens 以及 python 的捆绑开发工具，最后是中文界面。</li>
+<li>安装 intelliJ IDEA.</li>
+</ol>
+<h2 id="进阶"><a href="#进阶" class="headerlink" title="进阶"></a>进阶</h2><p>完成 alias 配置</p>
+<h3 id="01-窗口行为调整"><a href="#01-窗口行为调整" class="headerlink" title="01 窗口行为调整"></a>01 窗口行为调整</h3><ol>
+<li>安装 gnome-tweaks | <code>sai gnome-tweaks</code></li>
+<li>通过 gnome-tweaks 使新建窗口居中</li>
+<li>前往 <a target="_blank" rel="noopener" href="https://extensions.gnome.org/"><code>https://extensions.gnome.org/</code></a> 安装浏览器插件</li>
+<li>选择需要的插件</li>
+</ol>
+<h3 id="02-输入法配置-参考中州韵输入法设置"><a href="#02-输入法配置-参考中州韵输入法设置" class="headerlink" title="02 输入法配置 | 参考中州韵输入法设置"></a>02 输入法配置 | 参考中州韵输入法设置</h3><ol>
+<li>install ibus-rime: <code>sudo apt-get install ibus-rime</code></li>
+<li>open ibus-rime: 重新啓動，在鍵盤-輸入法中添加 Chinese-ibus-rime. 如果找不到該選項，多輸入幾次。成功啓用後，進入 <code>~/.config/ibus</code> 目錄，可以看到 <code>rime</code> 文件夾, 這個文件夾將用於以後配置。</li>
+<li>使用 <code>东风破</code> 管理工具快速配置雾凇词库</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --depth=1 https://github.com/rime/plum</span><br><span class="line"><span class="built_in">cd</span> plum</span><br><span class="line">bash rime-install iDvel/rime-ice:others/recipes/full</span><br></pre></td></tr></table></figure>
+
+<ol>
+<li>全部完成！</li>
+</ol>
+<h3 id="03-科学上网"><a href="#03-科学上网" class="headerlink" title="03 科学上网"></a>03 科学上网</h3><p>下载 clashy，安装依赖 libfuse2，使用 clashy AppImage 运行</p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="01-pip-换源"><a href="#01-pip-换源" class="headerlink" title="01 pip 换源"></a>01 pip 换源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
+
+<h3 id="02-docker-安装"><a href="#02-docker-安装" class="headerlink" title="02 docker 安装"></a>02 docker 安装</h3><h3 id="Set-up-the-repository"><a href="#Set-up-the-repository" class="headerlink" title="Set up the repository"></a><strong>Set up the repository</strong></h3><ol>
+<li>Update the package index and install packages to allow to use a repository over HTTPS:</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ca-certificates curl gnupg</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li><p>Add Docker’s official GPG key:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo install -m 0755 -d /etc/apt/keyrings</span><br><span class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span><br><span class="line">sudo <span class="built_in">chmod</span> a+r /etc/apt/keyrings/docker.gpg</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Use the following command to set up the repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> \</span><br><span class="line">  <span class="string">&quot;deb [arch=&quot;</span>$(dpkg --print-architecture)<span class="string">&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \</span></span><br><span class="line"><span class="string">  &quot;</span>$(. /etc/os-release &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$VERSION_CODENAME</span>&quot;</span>)<span class="string">&quot; stable&quot;</span> | \</span><br><span class="line">  sudo <span class="built_in">tee</span> /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Install docker engine:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure></li>
+</ol>
+
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2023-06-03</span>
+            
+            
+             
+        
+        </i>
+    </div>
+    
+        
+
+     
+</div>
+
+
+
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 2050-2333 Io Jupyter 
+
+            
+                
+
+            
+        </span>
+    
+</div>
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>二十二世纪杀人网络宣传部</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+        
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css">
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlight.min.js"></script>
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js"></script>
+
+    
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+                </div>
+            
+    </body>
+</html>
