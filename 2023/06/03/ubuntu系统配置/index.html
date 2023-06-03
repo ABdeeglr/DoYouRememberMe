@@ -205,7 +205,7 @@
 
     <div class="post-md">
         
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9F%BA%E6%9C%AC"><span class="post-toc-text">基本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E9%98%B6"><span class="post-toc-text">进阶</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-%E7%AA%97%E5%8F%A3%E8%A1%8C%E4%B8%BA%E8%B0%83%E6%95%B4"><span class="post-toc-text">01 窗口行为调整</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-%E8%BE%93%E5%85%A5%E6%B3%95%E9%85%8D%E7%BD%AE-%E5%8F%82%E8%80%83%E4%B8%AD%E5%B7%9E%E9%9F%B5%E8%BE%93%E5%85%A5%E6%B3%95%E8%AE%BE%E7%BD%AE"><span class="post-toc-text">02 输入法配置 | 参考中州韵输入法设置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#03-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91"><span class="post-toc-text">03 科学上网</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96"><span class="post-toc-text">其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-pip-%E6%8D%A2%E6%BA%90"><span class="post-toc-text">01 pip 换源</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-docker-%E5%AE%89%E8%A3%85"><span class="post-toc-text">02 docker 安装</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Set-up-the-repository"><span class="post-toc-text">Set up the repository</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%9F%BA%E6%9C%AC"><span class="post-toc-text">基本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E8%BF%9B%E9%98%B6"><span class="post-toc-text">进阶</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-%E7%AA%97%E5%8F%A3%E8%A1%8C%E4%B8%BA%E8%B0%83%E6%95%B4"><span class="post-toc-text">01 窗口行为调整</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-%E8%BE%93%E5%85%A5%E6%B3%95%E9%85%8D%E7%BD%AE-%E5%8F%82%E8%80%83%E4%B8%AD%E5%B7%9E%E9%9F%B5%E8%BE%93%E5%85%A5%E6%B3%95%E8%AE%BE%E7%BD%AE"><span class="post-toc-text">02 输入法配置 | 参考中州韵输入法设置</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#03-%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91"><span class="post-toc-text">03 科学上网</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#%E5%85%B6%E4%BB%96"><span class="post-toc-text">其他</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#01-pip-%E6%8D%A2%E6%BA%90"><span class="post-toc-text">01 pip 换源</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#02-docker-%E5%AE%89%E8%A3%85"><span class="post-toc-text">02 docker 安装</span></a></li></ol></li></ol>
         
         <h2 id="基本"><a href="#基本" class="headerlink" title="基本"></a>基本</h2><ol>
 <li>安装 ubuntu 22.04 版本系统</li>
@@ -220,7 +220,14 @@
 <li>wget</li>
 </ol>
 </li>
-<li>终端外观调整，并添加 omz，细节请参考附录中的 ubuntu 命令行美化</li>
+<li>终端外观调整，并添加 omz<ol>
+<li>确保已经安装 git 和 zsh 并且已经拥有 ssh-key.</li>
+<li>获取安装脚本并安装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>配置 <code>.zshrc</code> 文件</li>
+<li>安装插件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions.git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git</span><br></pre></td></tr></table></figure></li>
+<li>重新启动机器，使 zsh 生效</li>
+</ol>
+</li>
 <li>安装 OpenJDK</li>
 <li>安装 Edge, vscode. 安装 vscode 插件，包含项目管理，背景自定义，rosely light 主题，图标，gitlens 以及 python 的捆绑开发工具，最后是中文界面。</li>
 <li>安装 intelliJ IDEA.</li>
@@ -245,7 +252,7 @@
 <h3 id="03-科学上网"><a href="#03-科学上网" class="headerlink" title="03 科学上网"></a>03 科学上网</h3><p>下载 clashy，安装依赖 libfuse2，使用 clashy AppImage 运行</p>
 <h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="01-pip-换源"><a href="#01-pip-换源" class="headerlink" title="01 pip 换源"></a>01 pip 换源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
 
-<h3 id="02-docker-安装"><a href="#02-docker-安装" class="headerlink" title="02 docker 安装"></a>02 docker 安装</h3><h3 id="Set-up-the-repository"><a href="#Set-up-the-repository" class="headerlink" title="Set up the repository"></a><strong>Set up the repository</strong></h3><ol>
+<h3 id="02-docker-安装"><a href="#02-docker-安装" class="headerlink" title="02 docker 安装"></a>02 docker 安装</h3><ol>
 <li>Update the package index and install packages to allow to use a repository over HTTPS:</li>
 </ol>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ca-certificates curl gnupg</span><br></pre></td></tr></table></figure>
