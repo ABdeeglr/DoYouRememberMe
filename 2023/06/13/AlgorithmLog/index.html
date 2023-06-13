@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0,  viewport-fit=cover" name="viewport" />
+    <meta name="description" content="AlgorithmLog" />
+    <link rel="alternate icon" type="image/webp" href="/img/favicon.webp">
+    <title>The Matrix | Matrix is seeing you</title>
+
+    
+        
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/reset.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/markdown.css">
+
+            
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/fonts.css">
+ 
+            <!--注意：首页既不是post也不是page-->
+            
+        
+    
+    
+<link rel="stylesheet" href="/css/ui.css">
+ 
+    
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+    
+    <style>
+        :root {
+            --waline-theme-color: #fec591; 
+            --waline-color: #fec591; 
+            --waline-border-color: #fec591; 
+            --waline-white: #fec591; 
+            --waline-bgcolor-light: #005454;  
+        }
+        body {
+            color: #fec591;
+            background: #005454;
+        }
+        .post-md code {
+            background: black;
+            color: white; 
+        }
+        .wl-card span.wl-nick {
+            color: #fec591; 
+        }
+        .wl-card .wl-badge {
+            border: 1px solid #fec591;
+            color: #fec591; 
+        }
+        .wl-btn {
+            border: 1px solid #fec591; 
+            color:  #fec591;  
+        }
+        .wl-btn.primary {
+            color: #005454; 
+        }
+        .wl-header label {
+            color: #fec591;
+        }
+        a {
+            color: #fec591;
+        }
+
+        .post-md a {
+            color: #fec591;
+        }
+
+        .nav li a {
+            color: #fec591;
+        }
+
+        .archive-main a:link {
+            color: #fec591;
+        }
+
+        .archive li span {
+            color: #fec591;
+        }
+
+        .post-main-title {
+            color: #fec591;
+        }
+
+        .post-md h1,
+        .post-md h2,
+        .post-md h3,
+        .post-md h4,
+        .post-md h5,
+        .post-md h6 {
+            color: #fec591;
+        }
+
+        [data-waline] p {
+            color: #fec591;
+        }
+        [data-waline] a {
+            color: #fec591;
+        } 
+        .wl-sort li.active {
+            color: #fec591;
+        }
+
+        .wl-card .wl-meta>span {
+            background: #005454;
+        }
+
+        .paper {
+            background: #005454;
+        }
+
+        .index-main {
+            background: #005454;
+        }
+
+        .paper-main {
+            background: #005454;
+        }
+
+        .wl-panel {
+            background: #005454;
+        }
+
+        .archive li:nth-child(odd) {
+            background: #005454;
+            ;
+        }
+
+        .archive li:nth-child(even) {
+            background: #005454;
+        }
+
+        .post-md>table tr:nth-child(odd) td {
+            background: #005454;
+        }
+
+        .post-md>table tr:nth-child(even) td {
+            background: #005454;
+        }
+    </style>
+
+    <body>
+        <div class="paper">
+            
+            
+            
+            
+                <div class="shadow-drop-2-bottom paper-main">
+                    
+<div class="header">
+    <div class="header-container">
+        <img style="
+        width: 56px;
+        height: auto;" alt="^-^" cache-control="max-age=86400" class="header-img" src="/img/favicon.webp" width="10%"></img>
+        <div class="header-content">
+            <a class="logo" href="/">The Matrix</a> 
+            <span class="description">There comes a time when you realize that everything is a dream and only those things can be preserved by writting have any possibility to be real.</span> 
+        </div>
+        
+    </div>
+    
+   
+    <ul class="nav">
+        
+            
+                <li><a href="/">首页</a></li>
+            
+        
+            
+                <li><a href="/list/">文章</a></li>
+            
+        
+            
+                <li><a href="/about/">关于</a></li>
+            
+        
+            
+                <li><a href="/categories/">分类</a></li>
+            
+        
+    </ul>
+</div> 
+        
+                    
+                    
+
+                    
+                    
+                    
+                    <!--说明是文章post页面-->
+                    
+                        <div class="post-main">
+
+    
+        <div class="post-main-title">
+            AlgorithmLog
+        </div>
+      
+    
+
+    <div class="post-md">
+        
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-1-Object-oriented-programming"><span class="post-toc-text">1.2.1 Object-oriented programming</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-2-Using-abstract-data-types"><span class="post-toc-text">1.2.2 Using abstract data types</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-3-Examples-of-abstract-data-types"><span class="post-toc-text">1.2.3 Examples of abstract data types</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-4-Implementing-abstract-data-types"><span class="post-toc-text">1.2.4 Implementing abstract data types</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-2-5-Designing-abstract-data-types"><span class="post-toc-text">1.2.5 Designing abstract data types</span></a></li></ol>
+        
+        <h2 id="1-2-1-Object-oriented-programming"><a href="#1-2-1-Object-oriented-programming" class="headerlink" title="1.2.1 Object-oriented programming"></a>1.2.1 <strong>Object-oriented programming</strong></h2><ol>
+<li>Programming in Java is largely based on building data types. Java 编程很大程度上依赖于构造数据类型</li>
+<li>This style of programming is known as <em>object-oriented programming</em>, as it revolves around the concept of an <em>object</em>, an entity that holds a data type value. 这种编程风格被称为面向对象编程，因为它围绕着“对象”这个概念。对象是指一种封装了数据类型的实体</li>
+<li>With Java’s primitive types we are largely confined to programs that operate on numbers, 使用 Java 的基元类型进行编程，我们在很大程度上会被局限在进行一些数字操作<ol>
+<li>but with reference types we can write programs that operate on strings, pictures, sounds, or any of hundreds of other abstractions 如果使用引用类型，我们就能够写出操作字符串、图片、声音及其他数以百计的抽象对象的程序</li>
+<li>that are available in Java’s standard libraries or on our booksite. 这些抽象对象存放在 Java 标准库中</li>
+</ol>
+</li>
+<li>Even more significant than libraries of predefined data types is that the range of data types available in Java programming is open-ended, because you can define your own data types. 比预先定义在标准库中的数据类型更重要的是，Java 编程是开放的，你可以创造你想要的数据类型</li>
+</ol>
+<p>👋 <strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>主要概念</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<ul>
+<li>数据类型：数据类型是一组值和定义在值上的一组操作的统称。</li>
+<li>抽象数据类型：抽象数据类型是其内部表示形式对客户端隐藏的数据类型。</li>
+<li>对象<ul>
+<li>An <em>object</em> is an entity that can take on a data-type value. 对象是一个???的数据实体</li>
+<li>Objects are characterized by three essential properties:  对象的特征基于三个必要性质</li>
+<li>The <em>state</em> of an object is a value from its data type;  实例的状态是其数据类型中的值</li>
+<li>the <em>identity</em> of an object distinguishes one object from another; 实例的标识符区分了该实例和另一个实例</li>
+<li>the <em>behavior</em> of an object is the effect of data-type operations. 实例的行为是数据类型操作的结果</li>
+<li>In Java, a <em>reference</em> is a mechanism for accessing an object. 在 Java 中，引用是访问对象的一种方式</li>
+</ul>
+</li>
+</ul>
+<p><strong><strong><strong><strong><strong><strong><strong><strong><strong><strong>其他概念</strong></strong></strong></strong></strong></strong></strong></strong></strong></strong></p>
+<ul>
+<li><p><em>Applications programming interface (API).</em> 应用程序编程接口</p>
+<ul>
+<li>To specify the behavior of an abstract data type, we use an <em>application programming interface</em> (API) 为了定义抽象数据类型的行为，我们使用一套应用程序编程接口</li>
+<li>which is a list of <em>constructors</em> and <em>instance methods</em> (operations), with an informal description of the effect of each, as in this API for : <code>Counter</code> 这是一系列<em>构造器</em>（constructor）和<em>实例化方法，</em>以及对每个效果的非正式描述，比如这个对 Counter 类的 API 描述</li>
+</ul>
+  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">counter</span> &#123;</span><br><span class="line">		Counter(String id) <span class="comment">// Create a counter named &quot;id&quot;</span></span><br><span class="line">		<span class="keyword">void</span> <span class="title function_">increment</span><span class="params">()</span> <span class="comment">// increment the counter by one</span></span><br><span class="line">		<span class="type">int</span> <span class="title function_">tally</span><span class="params">()</span> <span class="comment">// number of increments since creation</span></span><br><span class="line">		String <span class="title function_">toString</span><span class="params">()</span> <span class="comment">// string representation</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><em>Client.</em> A client is a program that uses a data type. 客户端：在这里，客户端是指使用预先构造好的抽象数据类型的程序，而不是网络应用中所谓的客户端。</p>
+</li>
+<li><p><em>Implementation.</em> An implementation is the code that implements the data type specified in an API 实现：实现 API 中指定的数据类型的代码</p>
+</li>
+</ul>
+<h2 id="1-2-2-Using-abstract-data-types"><a href="#1-2-2-Using-abstract-data-types" class="headerlink" title="1.2.2 Using abstract data types"></a>1.2.2 <strong>Using abstract data types</strong></h2><ol>
+<li><p>A client does not need to know how a data type is implemented in order to be able to use it. client 不需要知道数据类型如何实现，只需要知道如何使用数据类型</p>
+</li>
+<li><p><em>Creating objects.</em> 创建对象</p>
+</li>
+<li><p>Each data-type value is stored in an object. 任何数据对象的值都存储在对象内部（data-type究竟指什么）</p>
+</li>
+<li><p>To create (or <em>instantiate</em>) an individual object, we invoke a <em>constructor</em> by using the keyword new. 创建一个独立的对象，需要调用构造器和关键词 <code>new</code></p>
+</li>
+<li><p>Each time that a client uses new, the system allocates memory space for the object, initializes its value, and returns a reference to the object. 每当 client 使用 new 时，系统会为对象分配内存空间，初始化它的值，然后返回这个对象的引用</p>
+</li>
+</ol>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6e8bc906-cec1-409f-9465-7422b8ad0910/constructor.png" alt="构造器和 new 关键词"></p>
+<p>构造器和 new 关键词</p>
+<ol>
+<li><em>Invoking instance methods. 调用实例方法</em></li>
+<li>The purpose of an instance method is to operate on data-type values. 实例方法的用途是对数据类型值进行操作</li>
+<li>Instance methods have all of the properties of static methods: arguments are passed by value, method names can be overloaded, they may have a return value, and they may cause side effects. 实例方法具有静态方法的所有性质：参数按值传递，方法名称可以重载，它们可能具有返回值，并且可能附带 side effects</li>
+<li>They have an additional property that characterizes them: <em>each invocation is associated with an object</em>.它们有一个额外的属性来表征它们：每个调用都与一个对象相关联，所以被称为（实例方法</li>
+</ol>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1930a84d-2735-43ef-a96d-57ac1f266f4f/instance-method.png" alt="instance-method.png"></p>
+<ol>
+<li><p><em>Using objects. 使用对象</em></p>
+</li>
+<li><p>Declarations give us variable names for objects that we can use in code. 声明为我们提供了可以在代码中使用的对象的变量名称</p>
+</li>
+<li><p>To use a given data type, we: 要使用给定的数据类型，我们应当：</p>
+<ol>
+<li>Declare variables of the type, for use in referring to objects 声明变量的类型，用于引用对象</li>
+<li>Use the keyword <code>new</code> to invoke a constructor that creates objects of the type 使用一个关键字 <code>new</code> 来调用构造器创建该类型的一个对象</li>
+<li>Use the object name to invoke instance methods, either as statements or within expressions 使用对象名称调用实例方法，不论是在语句还是在表达式中</li>
+</ol>
+</li>
+<li><p>例如 Flips.java 是 Counter.java 的一个 client，它 takes a command-line argument T and simulate T coin flips. 似乎是投针实验？</p>
+</li>
+<li><p><em>Assignment statements.</em> 赋值声明</p>
+</li>
+<li><p>An assignment statement with a reference type creates a copy of the reference (and does not create a new object). 和引用类型一起使用的赋值声明能创造引用的一个副本，但不会创造一个新的对象</p>
+</li>
+<li><p>This situation is known as <em>aliasing</em>: both variables refer to the same object. 简而言之，两个变量都指向同一个对象，称之为别名。这是现代概念：variable - object 构型</p>
+</li>
+<li><p>Aliasing is a common source of bugs in Java programs, as illustrated by the following example: 不过，别名是 Java 中常见的 bug 来源，看上去对一个别名的操作会导致变量本身被改变了。</p>
+</li>
+<li><p><em>Objects as arguments.</em> 将对象作为参数</p>
+</li>
+<li><p>You can pass objects as arguments to methods. 你可以向方法传递对象作为参数</p>
+</li>
+<li><p>Java passes a <em>copy</em> of the argument value from the calling program to the method. Java 会传递一份对象的复制，这个复制由调用程序传递给被调用的方法</p>
+</li>
+<li><p>This arrangement is known as <em>pass by value</em>. 通常，这种传递行为叫作值传递</p>
+</li>
+<li><p>If you pass a reference to an object of type Counter, Java passes a copy of that reference.  如果传递对 Counter 类型的对象的引用，Java 将传递该引用的副本。</p>
+</li>
+<li><p>Thus, the method cannot change the original reference (make it point to a different Counter), but it can change the value of the object, for example by using the reference to call increment(). 这样，方法就不会对原本的引用产生影响，但它会改变对象的状态</p>
+</li>
+<li><p><em>Objects as return values.</em> 对象作为返回值</p>
+</li>
+<li><p>You can also use an object as a return value from a method. 你可以使用对象作为方法的返回值</p>
+</li>
+<li><p>The method might return an object passed to it as an argument, as in FlipsMax.java, or it might create an object and return a reference to it. 该方法可能会返回作为参数传递给它的对象，如 FlipsMax.java 中，或者它可能创建一个对象并返回对它的引用（这里讲的不清楚，实际上这个生命周期有关）</p>
+</li>
+<li><p>This capability is important because Java methods allow only one return value—using objects enables us to write code that, in effect, returns multiple values. Java 的这个能力相当重要，有了它，我们才能够返回多个值</p>
+</li>
+<li><p><em>Arrays are objects.</em> 数组也是对象</p>
+</li>
+<li><p>In Java, every value of any nonprimitive type is an object. 在 Java 中，所有非基元类型的数据都是对象</p>
+</li>
+<li><p>In particular, arrays are objects. 数组也是对象</p>
+</li>
+<li><p>As with strings, there is special language support for certain operations on arrays: declarations, initialization, and indexing. 和 String 类型一样，对数组操作由特殊的语法支持，比如说声明、初始化和索引</p>
+</li>
+<li><p>As with any other object, when we pass an array to a method or use an array variable on the right hand side of an assignment statement, we are making a copy of the array reference, not a copy of the array. 和其他对象类似，当我们传递一个数组给方法，或者将数组作为右值使用时，我们使用的是数组的副本而非本身</p>
+</li>
+<li><p><em>Arrays of objects.</em> 对象的数组</p>
+</li>
+<li><p>Array entries can be of any type. 数组元素可以是任意类型</p>
+</li>
+<li><p>When we create an array of objects, we do so in two steps: 如果要创建一个对象数组，需要分两步</p>
+<ol>
+<li>create the array, using the bracket syntax for array constructors; 创造一个数组，使用括号语法来调用数组构造器</li>
+<li>create each object in the array, using a standard constructor for each. 创建数组中的每一个对象，这需要对每一个元素都调用标准的构造器</li>
+</ol>
+</li>
+<li><p>Rolls.java simulates rolling a die, using an array of Counter objects to keep track of the number of occurrences of each possible value. Rools.java 模拟掷骰子，使用 Counter 对象数组来跟踪每个可能值的出现次数</p>
+</li>
+</ol>
+<h2 id="1-2-3-Examples-of-abstract-data-types"><a href="#1-2-3-Examples-of-abstract-data-types" class="headerlink" title="1.2.3 Examples of abstract data types"></a>1.2.3 <strong>Examples of abstract data types</strong></h2><h2 id="1-2-4-Implementing-abstract-data-types"><a href="#1-2-4-Implementing-abstract-data-types" class="headerlink" title="1.2.4 Implementing abstract data types"></a>1.2.4 <strong><strong>Implementing abstract data types</strong></strong></h2><h2 id="1-2-5-Designing-abstract-data-types"><a href="#1-2-5-Designing-abstract-data-types" class="headerlink" title="1.2.5 Designing abstract data types"></a>1.2.5 <strong>Designing abstract data types</strong></h2>
+    </div>
+
+    <div class="post-meta">
+        <i>
+        
+            <span>2023-06-13</span>
+            
+            
+             
+        
+        </i>
+    </div>
+    
+        
+
+     
+</div>
+
+
+
+                    
+                    
+                    <div class="footer">
+    
+        <span> 
+            © 2050-2333 Io Jupyter 
+
+            
+                
+
+            
+        </span>
+    
+</div>
+<!--这是指一条线往下的内容-->
+<div class="footer-last">
+    
+            <span>二十二世纪杀人网络宣传部</span>
+            
+                <span class="footer-last-span-right"><i>本站由<a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/index.html">Hexo</a>驱动｜使用<a target="_blank" rel="noopener" href="https://github.com/HiNinoJay/hexo-theme-A4">Hexo-theme-A4</a>主题</i></span>
+            
+    
+</div>
+
+
+    
+        
+<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/css/a11y-dark.min.css">
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlight.min.js"></script>
+
+        
+<script src="https://jsd.onmicrosoft.cn/npm/hexo-theme-a4@latest/source/js/highlightjs-line-numbers.js"></script>
+
+    
+
+
+<script>
+    hljs.initHighlightingOnLoad();
+    hljs.initLineNumbersOnLoad();
+</script>
+                </div>
+            
+    </body>
+</html>
