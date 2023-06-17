@@ -238,7 +238,13 @@
 <li>To specify the behavior of an abstract data type, we use an <em>application programming interface</em> (API) 为了定义抽象数据类型的行为，我们使用一套应用程序编程接口</li>
 <li>which is a list of <em>constructors</em> and <em>instance methods</em> (operations), with an informal description of the effect of each, as in this API for : <code>Counter</code> 这是一系列<em>构造器</em>（constructor）和<em>实例化方法，</em>以及对每个效果的非正式描述，比如这个对 Counter 类的 API 描述</li>
 </ul>
-  <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">counter</span> &#123;</span><br><span class="line">		Counter(String id) <span class="comment">// Create a counter named &quot;id&quot;</span></span><br><span class="line">		<span class="keyword">void</span> <span class="title function_">increment</span><span class="params">()</span> <span class="comment">// increment the counter by one</span></span><br><span class="line">		<span class="type">int</span> <span class="title function_">tally</span><span class="params">()</span> <span class="comment">// number of increments since creation</span></span><br><span class="line">		String <span class="title function_">toString</span><span class="params">()</span> <span class="comment">// string representation</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="java">public class counter &#123;
+        Counter(String id) // Create a counter named &quot;id&quot;
+        void increment() // increment the counter by one
+        int tally() // number of increments since creation
+        String toString() // string representation
+&#125;
+</code></pre>
 </li>
 <li><p><em>Client.</em> A client is a program that uses a data type. 客户端：在这里，客户端是指使用预先构造好的抽象数据类型的程序，而不是网络应用中所谓的客户端。</p>
 </li>

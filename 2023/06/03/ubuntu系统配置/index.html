@@ -222,9 +222,14 @@
 </li>
 <li>终端外观调整，并添加 omz<ol>
 <li>确保已经安装 git 和 zsh 并且已经拥有 ssh-key.</li>
-<li>获取安装脚本并安装<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sh -c <span class="string">&quot;<span class="subst">$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)</span>&quot;</span></span><br></pre></td></tr></table></figure></li>
+<li>获取安装脚本并安装<pre><code class="bash">sh -c &quot;$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)&quot;
+</code></pre>
+</li>
 <li>配置 <code>.zshrc</code> 文件</li>
-<li>安装插件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-autosuggestions.git</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/zsh-users/zsh-syntax-highlighting.git</span><br></pre></td></tr></table></figure></li>
+<li>安装插件<pre><code class="bash">git clone https://github.com/zsh-users/zsh-autosuggestions.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+</code></pre>
+</li>
 <li>重新启动机器，使 zsh 生效</li>
 </ol>
 </li>
@@ -244,29 +249,45 @@
 <li>open ibus-rime: 重新啓動，在鍵盤-輸入法中添加 Chinese-ibus-rime. 如果找不到該選項，多輸入幾次。成功啓用後，進入 <code>~/.config/ibus</code> 目錄，可以看到 <code>rime</code> 文件夾, 這個文件夾將用於以後配置。</li>
 <li>使用 <code>东风破</code> 管理工具快速配置雾凇词库</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> --depth=1 https://github.com/rime/plum</span><br><span class="line"><span class="built_in">cd</span> plum</span><br><span class="line">bash rime-install iDvel/rime-ice:others/recipes/full</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">git clone --depth=1 https://github.com/rime/plum
+cd plum
+bash rime-install iDvel/rime-ice:others/recipes/full
+</code></pre>
 <ol>
 <li>全部完成！</li>
 </ol>
 <h3 id="03-科学上网"><a href="#03-科学上网" class="headerlink" title="03 科学上网"></a>03 科学上网</h3><p>下载 clashy，安装依赖 libfuse2，使用 clashy AppImage 运行</p>
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="01-pip-换源"><a href="#01-pip-换源" class="headerlink" title="01 pip 换源"></a>01 pip 换源</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br><span class="line">pip config <span class="built_in">set</span> global.index-url https://pypi.tuna.tsinghua.edu.cn/simple</span><br></pre></td></tr></table></figure>
-
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="01-pip-换源"><a href="#01-pip-换源" class="headerlink" title="01 pip 换源"></a>01 pip 换源</h3><pre><code class="bash">python -m pip install --upgrade pip
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+</code></pre>
 <h3 id="02-docker-安装"><a href="#02-docker-安装" class="headerlink" title="02 docker 安装"></a>02 docker 安装</h3><ol>
 <li>Update the package index and install packages to allow to use a repository over HTTPS:</li>
 </ol>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install ca-certificates curl gnupg</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">sudo apt-get update
+sudo apt-get install ca-certificates curl gnupg
+</code></pre>
 <ol start="2">
-<li><p>Add Docker’s official GPG key:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo install -m 0755 -d /etc/apt/keyrings</span><br><span class="line">curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</span><br><span class="line">sudo <span class="built_in">chmod</span> a+r /etc/apt/keyrings/docker.gpg</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Use the following command to set up the repository:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">echo</span> \</span><br><span class="line">  <span class="string">&quot;deb [arch=&quot;</span>$(dpkg --print-architecture)<span class="string">&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \</span></span><br><span class="line"><span class="string">  &quot;</span>$(. /etc/os-release &amp;&amp; <span class="built_in">echo</span> <span class="string">&quot;<span class="variable">$VERSION_CODENAME</span>&quot;</span>)<span class="string">&quot; stable&quot;</span> | \</span><br><span class="line">  sudo <span class="built_in">tee</span> /etc/apt/sources.list.d/docker.list &gt; /dev/null</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>Install docker engine:</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin</span><br><span class="line">sudo docker run hello-world</span><br></pre></td></tr></table></figure></li>
+<li>Add Docker’s official GPG key:</li>
 </ol>
+<pre><code class="bash">sudo install -m 0755 -d /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+sudo chmod a+r /etc/apt/keyrings/docker.gpg
+</code></pre>
+<ol start="3">
+<li>Use the following command to set up the repository:</li>
+</ol>
+<pre><code class="bash">echo \
+  &quot;deb [arch=&quot;$(dpkg --print-architecture)&quot; signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  &quot;$(. /etc/os-release &amp;&amp; echo &quot;$VERSION_CODENAME&quot;)&quot; stable&quot; | \
+  sudo tee /etc/apt/sources.list.d/docker.list &gt; /dev/null
+</code></pre>
+<ol start="4">
+<li>Install docker engine:</li>
+</ol>
+<pre><code class="bash">sudo apt-get update
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo docker run hello-world
+</code></pre>
 
     </div>
 
